@@ -1,0 +1,44 @@
+/* MentionComponent.css */
+.container {
+  position: relative;
+}
+
+.content-editable {
+  width: 808px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.mention-suggestions {
+  position: relative;
+  top: 4px;
+  left: 0px;
+  width: 267px;
+  border: 1px solid;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.selected-mention {
+  background: #1D9BD170;
+  color: #117AA7;
+}
+
+.selected {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.mention-suggestions div {
+  font-size: 15px;
+  padding: 4px;
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  color: gray;
+  display: block; /* For Firefox */
+}
